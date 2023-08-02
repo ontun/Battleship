@@ -1,18 +1,18 @@
 from random import randint, choice
 
 
-class BoardException(Exception):#класс исключение (родитель)
+class BoardException(Exception):# класс исключение (родитель)
     pass
 
-class BoardOutException(BoardException):#класс исключение
+class BoardOutException(BoardException):# класс исключение
     def __str__(self):
         return "Вы пытаетесь выстрелить за доску!"
 
-class BoardUsedException(BoardException):#класс исключение
+class BoardUsedException(BoardException):# класс исключение
     def __str__(self):
         return "Вы уже стреляли в эту клетку"
 
-class BoardWrongShipException(BoardException):#класс исключение
+class BoardWrongShipException(BoardException):# класс исключение
     pass
 
 
